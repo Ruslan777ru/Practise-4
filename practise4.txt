@@ -1,0 +1,46 @@
+#Задание_1
+speed  = float(input('Какая скорость транспортного средства? '))
+print(speed)
+hourall = float(input('Введите время:  '))
+hour = (hourall / hourall)
+while hour <=  hourall:
+    dist = hour * speed
+    print('Дистанция равна:  ', dist ,'  Время равно:  ', hour)
+    hour = hour + 1
+    
+
+#Задание_2
+n = int(input('Введите числа последовательности:  '))
+sum = 0
+for i in range (n, -1, -1):
+    print(i)
+    sum = i + sum
+print('Сумма всей последовательности равна: ', sum)
+
+
+#Задание_3
+n = int(input('Число n факториал равно:  '))
+factorial = 1
+while n > 1:
+    factorial = factorial * n
+    n = n - 1
+print(factorial)
+
+
+#Задание_4
+daystart = 1
+dayend = int(input('Введите крайний день развития организмов: '))
+start = int(input('Введите количество организмов: '))
+procent = float(input('Введите процентное соотношение: '))
+up = procent / 100
+while daystart <= dayend:
+    print('День ',  daystart,  'Популяция',  start)   
+    daystart += 1
+    start = start + (start * up)
+
+
+#Задание_5
+print('Введите высоту')
+h=int(input())
+for i in range(1, h+1):
+    print("#", " "*(i-1), "#", sep="")
